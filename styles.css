@@ -309,6 +309,7 @@ padding:80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #6797a5;
+padding-bottom: 40px;
 
 
   }
