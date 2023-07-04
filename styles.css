@@ -337,8 +337,6 @@ button, input {
 .background {
   display: flex;
   min-height: 50vh;
-position: relative;
-top:-100px;
 }
 
 .container {
@@ -638,23 +636,28 @@ text-align: center;
   }
   .contactustitle{
    
-    font-size: 60px;
+    font-size: 50px;
  
   }
   .address{
 
-    font-size:60px;
+    font-size:50px;
   
     }
     
-  
+    .address-full{
+    font-size: 30px;
+    
+    
+    }
     .footback{
    
       height: 900px;
     
     
     }
-   
+    
+    
 }
 
 @media screen and (max-width:1275px) {
@@ -670,7 +673,21 @@ text-align: center;
    column-gap: 100px;
     
   }
+  .address{
 
+    font-size:15px;
+   text-align: center;
+    }
+    
+    .address-full{
+     
+      font-size: 15px;
+   
+    
+    }
+    .social{
+      padding-bottom: 40px;
+    }
 
 }
 
@@ -836,11 +853,9 @@ display: contents;
   }
   
   .address-full{
-    margin-top: 30px;
-  
-    font-family: 'Raleway', sans-serif;
-  color: white;
-  
+   
+    font-size: 15px;
+ 
   
   }
   .social{
