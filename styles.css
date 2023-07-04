@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@170;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+
+  body{
+  
+  margin: 0;
+}
+
+header{
+  background-color: #FFFFFF;
+  display:grid;
+  grid-template-columns: 0.5fr 1fr ;
+  align-items: center;
+ height: 120px;
+ position: sticky;
+      top: 0;
+      z-index: 3;
+      width: 100%;
+      
+}
+
+
+
+.navbar{
+  overflow: hidden;
+  
+  padding: 5px;
+}
+
+.navbar a{
+  text-decoration: none;
+  
+  color:#9E9E9E;
+  border-radius: 1px;
+  font-size: 15px;
+  text-align: center;
+  padding: 14px 16px;
+font-family: 'PT Serif', serif;
+display: inline-block;
+transition: color 0.5s ease; /* Add transition for color */
+}
+.navbar .icon{
+  display:none;
+}
+.navbar a:hover{
+  color:#091405;
+
+}
+.navbar a:active{
+  color: #091405;
+}
+.navborder{
+  width:850px;
+  border-top: 2px solid #CACACA;
+  border-bottom: 2px solid #CACACA ;
+  }
+
+.logo{
+  position: relative;
+  left:300px;
+}
+.company_logo{
+  width:110px;
+
+}
+
+
+  
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+ position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f6f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+video { 
+  -webkit-transform: scaleX(2); 
+  -moz-transform: scaleX(2);
+}
+.video_background{
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+
+}
+.text-overlay {
+  position: absolute;
+  top:300px;
+  left:300px;
+
+  font-size: 36px;
+  font-family: 'Raleway', sans-serif;
+  color:#FAFAFA;
+
+
+  letter-spacing: 7px;
+  line-height: 60px;
+  z-index: 2;
+
+
+}
+
+.about-us{
+
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.5fr ;
+
+}
+
+.auleft1
+{
+ 
+  background-color: #D3D3D3;
+  
+}
+
+.aumiddle{
+padding:30px;
+background-color: white;
+}
+
+.auright{
+  
+  padding-top:150px;
+  padding-left: 20px;
+  background-color: white;
+}
+
+
+.aboutusimage{
+  width: 300px;
+  height:191px;
+  transition: transform 0.3s ease;
+
+}
+.auright:hover .aboutusimage{
+  transform: scale(1.1); /* Increase the value to adjust the scale */
+
+}
+
+.aboutuspara{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  color: black;
+
+}
+.about_title{
+  font-family: 'Raleway', sans-serif;
+font-size: 42px;
+color:#362E2A;
+padding-top: 10px;
+padding-left: 300px;
+}
+.tagline-section{
+  background: linear-gradient(90deg, rgba(255, 167, 0, 1) 0%, rgba(67, 45, 230, 1) 100%);
+
+}
+.tagline
+{
+  margin:0;
+  padding:20px;
+  color:white;
+text-align: center;
+font-size: 15px;
+letter-spacing: 2px;
+font-family: 'Roboto', sans-serif;
+align-items: center;
+
+}
+
+.mission-vision{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.mission{
+  background-color:white;
+text-align: center;
+transition: background-color 0.3s ease;
+
+}
+.mission:hover{
+  background-color: rgb(212, 218, 238);
+}
+.mission-image{
+  margin-top: 100px;
+  width:131px;
+  border-radius: 50%; /* Creates a circular shape */
+  object-fit: cover;
+
+}
+.vision{
+  background-color:white;
+  text-align: center;
+  transition: background-color 0.3s ease;
+
+}
+.vision:hover{
+  background-color: rgb(212, 218, 238);
+}
+.vision-image{
+  margin-top: 100px;
+  width:131px;
+  border-radius: 50%; /* Creates a circular shape */
+  object-fit: cover;
+}
+.belief{
+  background-color: white;
+  text-align: center;
+  transition: background-color 0.3s ease;
+
+}
+.belief:hover{
+  background-color: rgb(212, 218, 238);
+}
+.belief-image{
+  margin-top: 100px;
+  width:131px;
+  border-radius: 50%; /* Creates a circular shape */
+  object-fit: cover;
+}
+.missiontitle{
+  font-family: 'Raleway', sans-serif;
+font-size: 30px;
+color:#360D22;
+}
+.mission-statement{
+  font-family: 'Raleway', sans-serif;
+font-size:22px;
+padding-top: 8px;
+color:#360D22;
+padding:90px;
+}
+.vision-statement{
+  font-family: 'Raleway', sans-serif;
+font-size:22px;
+padding-top: 8px;
+color:#360D22;
+padding:90px;
+}
+.belief-statement{
+  font-family: 'Raleway', sans-serif;
+font-size:22px;
+padding-top: 8px;
+color:#360D22;
+padding:80px;
+}
+
+.footback{
+  position: relative;
+  height: 500px;
+  background-image: url('footback.jpg');
+  background-size: cover;
+
+}
+.contactus-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #6797a5;
+
+
+  }
+.contactus{
+
+  height:300px;
+ 
+}
+
+.contactustitle{
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  color: #F6F9F5;
+  position:relative;
+  text-align: center;
+}
+.contactright{
+  width:100%;
+}
+button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 50vh;
+position: relative;
+top:-100px;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: #cddcec;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #748aa2;  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: #ed1c6f;
+}
+
+.screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color:black;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: black;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color:rgb(88, 83, 224);
+}
+
+
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+
+.address{
+  font-family: 'Raleway', sans-serif;
+font-size: 20px;
+color: white;
+margin-top: 40px;
+margin-right: 0;
+}
+
+.address-full{
+  margin-top: 50px;
+font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+color: white;
+
+
+}
+.contactusform{
+  background-color: #6797a5;
+height: fit-content;
+}
+.backtotop{
+  height: 50px;
+  background-color: #2e6677;
+}
+
+.copyright{
+  font-family: 'Raleway', sans-serif;
+font-size:14px;
+text-align: center;
+}
+.tradingviewwidgets{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ 
+  overflow: hidden;
+  
+}
+.tradingview-widget-container1{
+  width: max-content;
+ 
+}
+.tradingview-widget-container2{
+  width: max-content;
+ 
+}
+.tradingview-widget-container3{
+  width: max-content;
+ 
+}
+.economic-calendar{
+  font-family: 'Raleway', sans-serif;
+  font-size: 23px;
+  text-align: center;
+}
+
+.marketoverview{
+  font-family: 'Raleway', sans-serif;
+  font-size: 23px;
+  text-align:left;
+}
+.marketdata{
+  font-family: 'Raleway', sans-serif;
+  font-size: 23px;
+  text-align:right;
+}
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 920px;
+  overflow: hidden;
+  background-color: rgba(14, 24, 46, 0.4); /* Adjust the last value (0.5) for desired transparency */
+      z-index: 1; /* Increase the value to bring the overlay on top of the image */
+
+}
+.tradingview-widget-container-mobile{
+  display: none;
+}
+
+.threeline{
+  position: relative;
+ left: 60px;
+  display: none;
+
+
+}
+.second-nav{
+  display:none;
+}
+@media screen and (max-width:2561px) {
+  .video_background{
+   object-fit: fill;
+  
+  }
+  .container {
+    flex: 0 1 1000px;
+  
+  }
+  .contactustitle{
+   
+    font-size: 60px;
+ 
+  }
+  .address{
+
+    font-size:60px;
+  
+    }
+    
+    .address-full{
+    font-size: 60px;
+    
+    
+    }
+    .footback{
+   
+      height: 900px;
+    
+    
+    }
+   
+}
+
+@media screen and (max-width:1275px) {
+  .logo{
+  
+   left: 0px;
+  }
+  .tradingview-widget-container3{
+  display: none;
+   
+  }
+  .tradingviewwidgets{
+   column-gap: 100px;
+    
+  }
+
+
+}
+
+@media screen and (max-width:1000px) {
+.second-nav{
+  display:flex;
+}
+.overlay2 {
+
+  width: 60%;
+
+
+}
+.text-overlay {
+ 
+  left:10px;
+
+  
+
+
+}
+
+
+
+  .logo{
+  
+    left:2px;
+  }
+  .navborder{
+    display: none;
+  }
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  header{
+   
+    grid-template-columns: 0.9fr 0fr ;
+  
+        
+  }
+  .second-nav{
+  width: fit-content;
+
+  }
+.overlay {
+  height: 100%;
+  width: 0;
+ position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }}
+  .about-us{
+
+ display: contents;
+  
+  }
+  .about_title{
+    font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  color:#362E2A;
+  padding-top: 10px;
+  padding-left: 100px;
+  }
+  
+.aboutusimage{
+  width: 300px;
+  height:191px;
+  transition: transform 0.3s ease;
+
+}
+
+.auright{
+  
+  padding-top:0px;
+
+  height: 300px;
+  background-color: white;
+}
+.mission-vision{
+display: contents;
+  
+}
+.tradingviewwidgets{
+  display:none;
+  
+}
+.economic-calendar{
+  display:none;
+}
+.contactustitle{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #F6F9F5;
+  position:relative;
+  text-align: center;
+  margin-top: 40px;
+}
+.contactus-section{
+  grid-template-columns: 0.4fr 1fr;
+ 
+
+
+  }
+  .address{
+
+  font-size:15px;
+ text-align: center;
+  }
+  
+  .address-full{
+    margin-top: 50px;
+  
+    font-family: 'Raleway', sans-serif;
+  color: white;
+  
+  
+  }
+  .social{
+    padding-bottom: 40px;
+  }
+}
